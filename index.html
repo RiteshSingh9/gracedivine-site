@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gracedivine Constructions</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1A1A1A',   // Premium Black
+                        gold: '#C9A646',     // Luxury Gold
+                        ivory: '#F7F5F2',    // Off White Ivory
+                        slate: '#2E2E2E',
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth !important;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-primary text-ivory">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-gold text-2xl font-serif">Gracedivine Solutions</h1>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#projects" class="hover:text-gold transition">Projects</a>
+                <a href="#ceo" class="hover:text-gold transition">CEO</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+        style="background-image: url('./images/hero-bg.avif');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 p-6" data-aos="fade-up">
+            <h2 class="text-4xl md:text-6xl font-serif text-gold mb-4">Building Dreams, Creating Legacies</h2>
+            <p class="text-lg md:text-xl mb-8">Premium construction services redefining excellence.</p>
+            <a href="#contact"
+                class="px-6 py-3 bg-gold text-primary font-semibold rounded shadow-lg hover:bg-ivory hover:text-primary transition">Get
+                in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="max-w-6xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div data-aos="fade-right">
+                <img src="./images/construction.svg" loading="lazy" class="rounded-lg shadow-lg" data-aos="fade-right" />
+            </div>
+            <div data-aos="fade-left">
+                <h3 class="text-3xl font-serif text-gold mb-4">About Us</h3>
+                <p class="mb-4 leading-relaxed text-ivory/90">
+                    At Gracedivine Constructions, we transform visions into luxurious realities. With decades of
+                    expertise, we blend innovative architecture with timeless elegance, ensuring every project speaks of
+                    sophistication and quality craftsmanship.
+                </p>
+                <p class="text-ivory/80">
+                    From residential masterpieces to commercial landmarks, our team of dedicated professionals delivers
+                    excellence in every detail.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <!-- Projects -->
+    <section id="projects" class="bg-slate py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
+            <h3 class="text-3xl font-serif text-gold mb-4">Our Projects</h3>
+            <p class="text-ivory/80">A showcase of premium craftsmanship and timeless architecture.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Project Card -->
+            <div class="glass p-4 rounded-lg overflow-hidden" data-aos="zoom-in">
+                <div class="aspect-[4/3] overflow-hidden rounded">
+                    <img src="./images/home.jpg" alt="Luxury Villas" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-serif mt-4 mb-2">Luxury Villas</h4>
+                <p class="text-sm text-ivory/80">Opulent residences that redefine comfort and elegance.</p>
+            </div>
+
+            <!-- Project Card -->
+            <div class="glass p-4 rounded-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+                <div class="aspect-[4/3] overflow-hidden rounded">
+                    <img src="./images/pole1.jpg" alt="Poswer Distribution Lines" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-serif mt-4 mb-2">Electric Distribution lines</h4>
+                <p class="text-sm text-ivory/80">Reliable and efficient power distribution solutions.</p>
+            </div>
+
+            <!-- Project Card -->
+            <div class="glass p-4 rounded-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
+                <div class="aspect-[4/3] overflow-hidden rounded">
+                    <img src="./images/road.jpg" alt="Road Construction" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-serif mt-4 mb-2">Roads</h4>
+                <p class="text-sm text-ivory/80">Durable and well-constructed roadways for seamless transportation.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CEO Section -->
+<section id="ceo" class="max-w-6xl mx-auto py-20 px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+            <img src="./images/Pawan Singh.jpg" class="rounded-full w-64 h-64 mx-auto shadow-2xl border-4 border-gold" />
+        </div>
+        <div data-aos="fade-left" class="text-center md:text-left">
+            <h3 class="text-3xl font-serif text-gold mb-4">Meet Our CEO</h3>
+            <p class="text-lg font-medium mb-2">Mr. Pawan Singh</p>
+            <p class="text-ivory/80 leading-relaxed">
+                After serving 15 years in the Indian Army with dedication and discipline, Pawan Singh founded
+                Gracedivine Constructions, which he has since shaped into a symbol of premium architectural
+                excellence. Guided by values of integrity, precision, and a commitment to creating luxury that
+                endures for generations, he continues to lead the company with the same honor and vision that
+                defined his service.
+            </p>
+            <p class="mt-6">
+                Also, explore the other firms led by Mr. Pawan Singh:
+                <a href="https://example.com/other-firms" target="_blank" class="text-gold underline hover:text-ivory transition">
+                    View Other Firms
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Us -->
+    <section id="contact" class="bg-slate py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center mb-12" data-aos="fade-up">
+            <h3 class="text-3xl font-serif text-gold mb-4">Get in Touch</h3>
+            <p class="text-ivory/80">We’d love to discuss your next project.</p>
+        </div>
+        <form class="max-w-3xl mx-auto glass rounded-lg p-8 space-y-6" data-aos="fade-up">
+            <div>
+                <input type="text" placeholder="Name"
+                    class="w-full p-3 rounded bg-primary/70 border border-ivory/20 placeholder-ivory/60 text-ivory focus:outline-none" />
+            </div>
+            <div>
+                <input type="email" placeholder="Email"
+                    class="w-full p-3 rounded bg-primary/70 border border-ivory/20 placeholder-ivory/60 text-ivory focus:outline-none" />
+            </div>
+            <div>
+                <textarea rows="4" placeholder="Message"
+                    class="w-full p-3 rounded bg-primary/70 border border-ivory/20 placeholder-ivory/60 text-ivory focus:outline-none"></textarea>
+            </div>
+            <div class="text-center">
+                <button
+                    class="px-6 py-3 bg-gold text-primary font-semibold rounded hover:bg-ivory hover:text-primary transition">Send
+                    Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-center py-8">
+        <p class="text-ivory/60">© 2025 Gracedivine Constructions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
