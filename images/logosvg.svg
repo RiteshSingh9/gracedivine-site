@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Circle background -->
+  <circle cx="100" cy="100" r="90" fill="#0B2545"></circle>
+  <!-- Road curve (white) -->
+  <path d="M50 150 Q100 120 150 150" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"></path>
+  <!-- Center dashed lane -->
+  <path d="M55 150 Q100 127 145 150" stroke="#F2C84B" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" fill="none" opacity="0.95"></path>
+  <!-- Pylon legs (gold) -->
+  <path d="M80 150 L100 50 L120 150" stroke="#F2C84B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+  <!-- Crossbars -->
+  <path d="M86 95 L114 95" stroke="#F2C84B" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M90 120 L110 120" stroke="#F2C84B" stroke-width="3.5" stroke-linecap="round"></path>
+  <!-- Lightning bolt (electric cyan) -->
+  <polygon points="100,62 92,88 108,88 96,118 118,80 102,80" fill="#00C2FF"></polygon>
+</svg>
